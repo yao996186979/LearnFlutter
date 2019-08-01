@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
-      routes: <String, WidgetBuilder>{'testPage': (_) => testPage()},
+//      routes: <String, WidgetBuilder>{'testPage': (_) => testPage()},
     );
   }
 }
