@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/testPage.dart';
+import 'package:flutter_app/navigation.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+  // This widget is the root of your application.-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,6 +37,7 @@ class MyHomePage extends StatefulWidget {
   // case the title) provided by the parent (in this case the App widget) and
   // used by the build method of the State. Fields in a Widget subclass are
   // always marked "final".
+
 
   final String title;
 
@@ -104,8 +105,11 @@ class _MyHomePageState extends State<MyHomePage> {
                  textColor: Colors.white,
                  child: new Text("ok"),
                  onPressed: (){
-
-             })
+                   Navigator.push(
+                     context,
+                     new MaterialPageRoute(builder: (context) => new MyApp()),
+                   );
+                 })
           ],
         ),
       ),
