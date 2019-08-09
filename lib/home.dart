@@ -8,24 +8,22 @@ class HomePage extends StatelessWidget {
         title: new Text('Home Page'),
       ),
       body: new Center(
-          child: new ListView(children: _getListData())
+          child: new ListView(children: getCustomData())
       ),
     );
   }
-  _getListData() {
+  getTextData() {
     List<Widget> widgets = [];
-    for (int i = 0; i < 10; i++) {
-
-//      widgets.add(Padding(padding:EdgeInsets.all(10.0),
-//        child: Text("Row $i"),
-//      ));
-
-
-      widgets.add(new Cell());
+    for (int i = 0; i < 100; i++) {
+      widgets.add(Text("${i}"));
     }
     return widgets;
   }
-
-
-
+  getCustomData() {
+    List<Widget> widgets = [];
+    for (int i = 0; i < 20; i++) {
+      widgets.add(new CustomCell(color: i%2==0?Colors.blueGrey:Colors.amber,child: Text("${i}")));
+    }
+    return widgets;
+  }
 }
