@@ -74,3 +74,5 @@ flutter:
     - family: IconFont
       fonts:
         - asset: assetss/fonts/iconfont.ttf
+  assets:
+    - assetss/localData/NavigationDirectory.json

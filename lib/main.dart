@@ -1,4 +1,6 @@
   import 'package:flutter/material.dart';
+import 'package:flutter_app/button.dart';
+import 'text.dart';
 import 'navigation.dart';
 import 'home.dart';
 void main() => runApp(MyApp());
@@ -18,6 +20,8 @@ class MyApp extends StatelessWidget {
         '/second': (BuildContext context) => SecondPage(),
         '/third': (BuildContext context) => ThirdPage(),
         '/home': (BuildContext context) => HomePage(),
+        '/button':(BuildContext context) => ButtonPage(),
+        '/text':(BuildContext context) => TextPage()
       },
 
     );
