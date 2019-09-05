@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
         '/second': (BuildContext context) => SecondPage(),
         '/third': (BuildContext context) => ThirdPage(),
         '/home': (BuildContext context) => HomePage(),
-        '/button':(BuildContext context) => ButtonPage(),
-        '/text':(BuildContext context) => TextPage()
+        '/button':(BuildContext context) => ButtonPage()
+
       },
 
     );
