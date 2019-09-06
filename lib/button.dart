@@ -12,6 +12,29 @@ class ButtonPage extends StatelessWidget{
       body: new Column(children: loadButton()),
     );
   }
+  //    new ButtonBar();
+//    new ButtonTheme();
+//    new DropdownButton(items: null, onChanged: null);
+//    new CloseButton();
+//    new BackButton();
+//    new FlatButton(onPressed: null, child: null);
+//    new FloatingActionButton(onPressed: null);
+//    new IconButton(icon: null, onPressed: null);
+//    new MaterialButton(onPressed: null);
+//    new OutlineButton(onPressed: null);
+//    new PopupMenuButton(itemBuilder: null);
+//    new RaisedButton(onPressed: null);
+//    new RawMaterialButton(onPressed: null);
+//    new DropdownButtonFormField(items: null);
+//    new DropdownButtonHideUnderline(child: null);
+//    new ToggleButtons(children: null, isSelected: null);
+//    new BackButtonIcon();
+//    new FlatButton.icon(onPressed: null, icon: null, label: null);
+//    new FloatingActionButton.extended(onPressed: null, label: null);
+//    new FloatingActionButtonAnimator();
+//    new FloatingActionButtonThemeData();
+//    new CupertinoButton(child: null, onPressed: null);
+//    new CupertinoButton.filled(child: null, onPressed: null);
   loadButton(){
     String selectedValue = "1";
     List<Widget> buttons = new List();
@@ -21,7 +44,7 @@ class ButtonPage extends StatelessWidget{
       new Text("111"),
       new Text("222"),
       new Text("333")
-    ],);
+      ],alignment: MainAxisAlignment.spaceAround,mainAxisSize: MainAxisSize.max);
     buttons.add(buttonBar);
 
     // ButtonTheme
@@ -63,29 +86,7 @@ class ButtonPage extends StatelessWidget{
     buttons.add(dropdownButton);
     return buttons;
 
-    new ButtonBar();
-    new ButtonTheme();
-    new DropdownButton(items: null, onChanged: null);
-    new CloseButton();
-    new BackButton();
-    new FlatButton(onPressed: null, child: null);
-    new FloatingActionButton(onPressed: null);
-    new IconButton(icon: null, onPressed: null);
-    new MaterialButton(onPressed: null);
-    new OutlineButton(onPressed: null);
-    new PopupMenuButton(itemBuilder: null);
-    new RaisedButton(onPressed: null);
-    new RawMaterialButton(onPressed: null);
-    new DropdownButtonFormField(items: null);
-    new DropdownButtonHideUnderline(child: null);
-    new ToggleButtons(children: null, isSelected: null);
-    new BackButtonIcon();
-    new FlatButton.icon(onPressed: null, icon: null, label: null);
-    new FloatingActionButton.extended(onPressed: null, label: null);
-    new FloatingActionButtonAnimator();
-    new FloatingActionButtonThemeData();
-    new CupertinoButton(child: null, onPressed: null);
-    new CupertinoButton.filled(child: null, onPressed: null);
+
   }
 
 
